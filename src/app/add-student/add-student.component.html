@@ -1,0 +1,21 @@
+<menu></menu>
+
+<div class="ui input">
+    <input type="text" placeholder="First Name" name="firstName" [(ngModel)]="student.firstName">
+</div><br><br>
+<div class="ui input">
+    <input type="text" placeholder="Last Name" name="lastName" [(ngModel)]="student.lastName">
+</div><br><br>
+<div class="ui input">
+    <input type="text" placeholder="Date of Birth" name="dob" [(ngModel)]="student.dob">
+</div><br><br>
+<div class="ui input">
+    <input type="text" placeholder="Parent Name" name="parentName" [(ngModel)]="student.parentName">
+</div><br><br>
+<div class="ui input">
+    <input type="text" placeholder="Address" name="address" [(ngModel)]="student.address">
+</div><br><br>
+<div class="ui input">
+    <input type="text" placeholder="Phone" name="parentPhone" [(ngModel)]="student.parentPhone">
+</div><br><br>
+<input class="ui blue button" type="button" value="Add/Update"  (click)="onAddUpdate(student)">

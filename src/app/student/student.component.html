@@ -1,0 +1,12 @@
+<menu></menu>
+<div class="ui middle aligned divided list">
+  <div class="item" *ngFor='let s of student'>
+    <div class="right floated content">
+      <button class="ui red button" (click)="onDelete(student)">Delete</button>
+      <button class="ui blue button" (click)="editStudent(s)">Edit</button>
+    </div>
+    <div class="content">
+      {{ s.rn }} | {{ s.firstName }} | {{ s.lastName }} | {{ s.dob }} | {{ s.parentName }} | {{ s.parentPhone}} | {{ s.address }}
+    </div>
+  </div>
+</div>
